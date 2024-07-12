@@ -1,0 +1,103 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Oswald, sans-serif;
+    background-image: url("../html/image\ 14.jpg");
+}
+
+.movie-header {
+    background: url('/mnt/data/image.png') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+}
+
+.header-content {
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.search-bar input {
+    padding: 8px;
+    border-radius: 4px;
+    border: none;
+    outline: none;
+}
+
+.movie-details {
+    bottom: 20%;
+    left: 5%;
+    max-width: 600px;
+}
+
+.movie-details h1 {
+    font-size: 120px;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.year h1 {
+    font-size: 120px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: transparent;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #fff;
+}
+
+.info {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.play-trailer {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.additional-info {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.info-item {
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.info-item span:first-child {
+    font-weight: bold;
+}

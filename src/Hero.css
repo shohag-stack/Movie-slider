@@ -1,0 +1,101 @@
+/* src/Hero.css */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-slide {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.hero-video-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.hero-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    object-fit: cover;
+}
+
+.hero-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 50%;
+    z-index: 1;
+    margin: 20px;
+}
+
+.movie-title {
+    font-size: 120px;
+    margin: 0;
+    text-align: left;
+    text-transform: uppercase;
+    font-weight: 900;
+    overflow: hidden;
+}
+
+.movie-details {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2rem;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+
+.release-date,
+.genres,
+.duration {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: white;
+    z-index: 2;
+}
+
+.char {
+    display: inline-block;
+}
+
+/* Remove any transition properties that might interfere with GSAP animations */
+.hero-content,
+.movie-title,
+.movie-details {
+    transition: none;
+}
+
+.char {
+    display: inline-block;
+}
