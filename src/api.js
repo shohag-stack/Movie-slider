@@ -1,5 +1,5 @@
-const API_KEY = '7c0de86914cedfde26c4ac05d0e0d56d'; // Replace with your actual API key
-const BASE_URL = 'https://api.themoviedb.org/3';
+const API_KEY = process.env.NEXT_PUBLIC_API_KEY; // Replace with your actual API key
+const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL;
 
 export const fetchTrendingMovies = async () => {
     const response = await fetch(`${BASE_URL}/trending/movie/week?api_key=${API_KEY}`);
